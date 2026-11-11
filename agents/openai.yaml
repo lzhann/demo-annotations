@@ -1,0 +1,4 @@
+interface:
+  display_name: "Demo 批注"
+  short_description: "为现有 Demo 接入批注、备注汇总、Tab 隔离与验收流程，保留原交互"
+  default_prompt: "使用 $demo-annotations 为当前 Demo 接入可保存、定位和验收的批注功能。"

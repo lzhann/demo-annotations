@@ -1,0 +1,12 @@
+请把这个组件包里的 demo-notes.js 和 demo-notes.css 接入我的 Demo，保留当前样式和业务交互。
+
+要求：
+1. 先读 README.md，核心脚本只接入一次；不同 Demo 配独立 projectId，同一个 Demo 多页编号一致。
+2. 不导入任何其他 Demo 的备注和业务数据，不重写页面样式。
+3. 给需要批注的位置加稳定 data-note-id 和可读 data-note-label。
+4. 页面、Tab、项目或筛选范围需要分别记备注；复杂页面提供 getContext 和 restoreContext。
+5. 保留已有链接、下钻和筛选按钮的正常点击，退出批注后圆标不能挡住操作。
+6. 检查刷新保留、跨页定位、Tab 区分、已处理、已验收隐藏圆标、编辑、删除及导入导出。
+7. 做完告诉我接入了哪些文件、projectId 是什么，以及需要如何备份备注。
+
+如果 JS 放在 assets 子目录，需要将 baseURL 配成整个 Demo 的根目录。SPA 切页后调用 refresh，应用销毁时调用 destroy。
